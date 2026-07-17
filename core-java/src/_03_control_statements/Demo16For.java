@@ -8,6 +8,7 @@ public class Demo16For {
                 System.out.println(i);
             }
         }
+
         System.out.println("solution 02");
         for (int i = 2; i <= 50; i = i + 2) {
             System.out.println(i);
