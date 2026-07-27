@@ -1,6 +1,10 @@
 package _04_classObject;
 
 public class Student {
+    static {
+        System.out.println("Student static block");
+    }
+
     static String collegeName = "IT Shaala"; // static :: common to all students
     String name; // instance :: unique per student
 
