@@ -14,5 +14,12 @@ public class Demo3 {
         }
         PaymentService paymentService = new PaymentServiceImpl();
         paymentService.process();
+
+
+        interface I1{}
+        interface I2{}
+        interface I3{}
+
+        class A implements I1, I2, I3{}
     }
 }
