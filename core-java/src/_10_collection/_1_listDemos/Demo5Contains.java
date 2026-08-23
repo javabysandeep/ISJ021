@@ -1,10 +1,9 @@
-package _10_collection;
+package _10_collection._1_listDemos;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
 
-public class Demo4RemoveIf {
+public class Demo5Contains {
     public static void main(String[] args) {
         ArrayList<Integer> integerArrayList = new ArrayList();
         integerArrayList.add(1);
@@ -14,13 +13,12 @@ public class Demo4RemoveIf {
         integerArrayList.add(5);
         integerArrayList.add(6);
 
-        //remove even numbers
-        System.out.println("Before removeIf " + integerArrayList);
+        System.out.println("contains " + integerArrayList.contains(11));
 
-        Predicate<Integer> filter = number -> number % 2 == 0;
-        integerArrayList.removeIf(filter);
-
-        System.out.println("After removeIf " + integerArrayList);
+        List<Integer> searchList = new ArrayList();
+        searchList.add(1);
+        searchList.add(2);
+        System.out.println("containsAll " + integerArrayList.containsAll(searchList));
 
     }
 }

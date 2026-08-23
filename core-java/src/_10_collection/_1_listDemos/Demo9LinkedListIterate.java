@@ -1,12 +1,12 @@
-package _10_collection;
+package _10_collection._1_listDemos;
 
-import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.function.Consumer;
 
-public class Demo6Iterate {
+public class Demo9LinkedListIterate {
     public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>();
+        LinkedList<Integer> list = new LinkedList<>();
         list.add(10);
         list.add(20);
         list.add(3);

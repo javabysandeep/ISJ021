@@ -1,14 +1,14 @@
-package _10_collection;
+package _10_collection._1_listDemos;
 
-import java.util.Vector;
+import java.util.ArrayList;
 
-public class Demo2Vector {
+public class Demo1 {
     public static void main(String[] args) {
         //10, 20, 30
         //01. variables
         //02. array
         //03. Collection [AL, LL, V, S, HS, LHS, TS, PQ]
-        Vector list = new Vector();
+        ArrayList list = new ArrayList();
         list.add("a");
         list.add("b");
         list.add(10);
@@ -19,5 +19,13 @@ public class Demo2Vector {
         list.add(null);
         list.add(null);
         System.out.println(list.toString());
+
+        ArrayList list2 = new ArrayList();
+        list2.addAll(list);
+        System.out.println(list2.toString());
+
+        list2.addFirst("added at the beginning");
+        System.out.println(list2.toString());
+
     }
 }
