@@ -1,11 +1,20 @@
 package com.itshaala.portal.model;
 
+import lombok.*;
+
+//@AllArgsConstructor
+//@NoArgsConstructor
+//@Getter
+//@Setter
+//@ToString
+//@EqualsAndHashCode
 public class Student {
     private int id;
     private String name;
     private String address;
     private String email;
     private String phone;
+
 
     @Override
     public String toString() {
