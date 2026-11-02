@@ -61,8 +61,8 @@ public class StudentDao {
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setInt(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
+            Student student = new Student();
             while (resultSet.next()) {
-                Student student = new Student();
                 student.setId(resultSet.getInt("id"));
                 student.setName(resultSet.getString("name"));
                 student.setEmail(resultSet.getString("email"));
@@ -73,7 +73,7 @@ public class StudentDao {
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
-        return null;
+        return student;
     }
 
     public List<Student> getAllStudents() {
