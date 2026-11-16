@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.itshaala.model.Product" name="product" scope="singleton">
+        <!-- dependency injection - SDI -->
+     <!--   <property name="id" value="101"/>
+        <property name="name" value="Iphone"/>
+        <property name="price" value="100000"/>
+-->
+        <!-- dependency injection - CDI -->
+        <constructor-arg name="id" value="202"/>
+        <constructor-arg name="name" value="Samsung"/>
+        <constructor-arg name="price" value="10000"/>
+
+
+    </bean>
+
+</beans>
